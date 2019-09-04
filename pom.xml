@@ -21,6 +21,8 @@
         <aop.version>0.0.1-SNAPSHOT</aop.version>
         <qconfig.version>0.0.1-SNAPSHOT</qconfig.version>
         <rambo.version>0.0.1-SNAPSHOT</rambo.version>
+        <mock.version>0.0.1-SNAPSHOT</mock.version>
+
     </properties>
 
     <modules>
@@ -30,19 +32,24 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>club.chenlinghong</groupId>
-                <artifactId>demo.aop</artifactId>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>aop</artifactId>
                 <version>${aop.version}</version>
             </dependency>
             <dependency>
-                <groupId>club.chenlinghong</groupId>
-                <artifactId>demo.qconfig</artifactId>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>qconfig</artifactId>
                 <version>${qconfig.version}</version>
             </dependency>
             <dependency>
-                <groupId>club.chenlinghong</groupId>
-                <artifactId>demo.rambo</artifactId>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>rambo</artifactId>
                 <version>${rambo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>mock</artifactId>
+                <version>${mock.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -90,6 +97,13 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+        </dependency>
+
+        <!-- aop -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.4</version>
         </dependency>
 
     </dependencies>

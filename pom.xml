@@ -20,6 +20,7 @@
         <java.version>1.8</java.version>
         <aop.version>0.0.1-SNAPSHOT</aop.version>
         <qconfig.version>0.0.1-SNAPSHOT</qconfig.version>
+        <rambo.version>0.0.1-SNAPSHOT</rambo.version>
     </properties>
 
     <modules>
@@ -37,6 +38,11 @@
                 <groupId>club.chenlinghong</groupId>
                 <artifactId>demo.qconfig</artifactId>
                 <version>${qconfig.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong</groupId>
+                <artifactId>demo.rambo</artifactId>
+                <version>${rambo.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -79,7 +85,13 @@
             <artifactId>commons-collections4</artifactId>
             <version>4.4</version>
         </dependency>
-        
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
     </dependencies>
 
     <build>

@@ -22,11 +22,16 @@
         <qconfig.version>0.0.1-SNAPSHOT</qconfig.version>
         <rambo.version>0.0.1-SNAPSHOT</rambo.version>
         <mock.version>0.0.1-SNAPSHOT</mock.version>
+        <evosuite.version>0.0.1-SNAPSHOT</evosuite.version>
 
     </properties>
 
     <modules>
-
+        <module>aop</module>
+        <module>evosuite</module>
+        <module>qconfig</module>
+        <module>mock</module>
+        <module>rambo</module>
     </modules>
 
     <dependencyManagement>
@@ -50,6 +55,11 @@
                 <groupId>club.chenlinghong.demo</groupId>
                 <artifactId>mock</artifactId>
                 <version>${mock.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>evosuite</artifactId>
+                <version>${evosuite.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

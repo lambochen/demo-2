@@ -10,6 +10,10 @@ import org.junit.Test;
 public class TernaryOperatorDemo {
 
     /**
+     * https://blog.csdn.net/chensanwa/article/details/100498077
+     */
+
+    /**
      * 三目运算符使用
      */
     public void ternaryOperator() {

@@ -18,7 +18,8 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <aopModule.version>0.0.1-SNAPSHOT</aopModule.version>
+        <aop.version>0.0.1-SNAPSHOT</aop.version>
+        <qconfig.version>0.0.1-SNAPSHOT</qconfig.version>
     </properties>
 
     <modules>
@@ -28,9 +29,14 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>club.chenlinghogn</groupId>
-                <artifactId>aop</artifactId>
-                <version>${aopModule.version}</version>
+                <groupId>club.chenlinghong</groupId>
+                <artifactId>demo.aop</artifactId>
+                <version>${aop.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong</groupId>
+                <artifactId>demo.qconfig</artifactId>
+                <version>${qconfig.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -46,6 +52,34 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.4</version>
+        </dependency>
+        
     </dependencies>
 
     <build>

@@ -9,9 +9,9 @@
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <groupId>club.chenlinghong</groupId>
-    <artifactId>demo.aop</artifactId>
+    <artifactId>demo.qconfig</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>aop</name>
+    <name>qconfig</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -20,9 +20,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.9.4</version>
+            <groupId>qunar.tc.qconfig</groupId>
+            <artifactId>qconfig-client</artifactId>
+            <version>1.100.13</version>
         </dependency>
     </dependencies>
 

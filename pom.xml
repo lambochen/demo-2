@@ -23,7 +23,9 @@
         <rambo.version>0.0.1-SNAPSHOT</rambo.version>
         <mock.version>0.0.1-SNAPSHOT</mock.version>
         <evosuite.version>0.0.1-SNAPSHOT</evosuite.version>
+        <graphql.version>0.0.1-SNAPSHOT</graphql.version>
         <ehcache.version>0.0.1-SNAPSHOT</ehcache.version>
+
     </properties>
 
     <modules>
@@ -32,6 +34,7 @@
         <module>qconfig</module>
         <module>mock</module>
         <module>rambo</module>
+        <module>graphql</module>
         <module>ehcache</module>
     </modules>
 
@@ -61,6 +64,11 @@
                 <groupId>club.chenlinghong.demo</groupId>
                 <artifactId>evosuite</artifactId>
                 <version>${evosuite.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>graphql</artifactId>
+                <version>${graphql.version}</version>
             </dependency>
             <dependency>
                 <groupId>club.chenlinghong.demo</groupId>

@@ -25,7 +25,7 @@
         <evosuite.version>0.0.1-SNAPSHOT</evosuite.version>
         <graphql.version>0.0.1-SNAPSHOT</graphql.version>
         <ehcache.version>0.0.1-SNAPSHOT</ehcache.version>
-
+        <javaeight.version>0.0.1-SNAPSHOT</javaeight.version>
     </properties>
 
     <modules>
@@ -36,6 +36,7 @@
         <module>rambo</module>
         <module>graphql</module>
         <module>ehcache</module>
+        <module>javaeight</module>
     </modules>
 
     <dependencyManagement>
@@ -74,6 +75,11 @@
                 <groupId>club.chenlinghong.demo</groupId>
                 <artifactId>ehcache</artifactId>
                 <version>${ehcache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>javaeight</artifactId>
+                <version>${javaeight.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

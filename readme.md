@@ -10,3 +10,4 @@ module 简介：
 - evosuite: evosuite单元测试自动化工具
 - graphql: GraphQL
 - ehcache: Ehcache
+- javaeight: java 8

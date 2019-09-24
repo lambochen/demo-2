@@ -9,3 +9,4 @@ module 简介：
 - mock: mock数据
 - evosuite: evosuite单元测试自动化工具
 - graphql: GraphQL
+- ehcache: Ehcache

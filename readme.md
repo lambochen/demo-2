@@ -11,3 +11,4 @@ module 简介：
 - graphql: GraphQL
 - ehcache: Ehcache
 - javaeight: java 8
+- email: 发送邮件

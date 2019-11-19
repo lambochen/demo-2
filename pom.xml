@@ -26,6 +26,7 @@
         <graphql.version>0.0.1-SNAPSHOT</graphql.version>
         <ehcache.version>0.0.1-SNAPSHOT</ehcache.version>
         <javaeight.version>0.0.1-SNAPSHOT</javaeight.version>
+        <email.version>0.0.1-SNAPSHOT</email.version>
     </properties>
 
     <modules>
@@ -37,6 +38,7 @@
         <module>graphql</module>
         <module>ehcache</module>
         <module>javaeight</module>
+        <module>email</module>
     </modules>
 
     <dependencyManagement>
@@ -80,6 +82,11 @@
                 <groupId>club.chenlinghong.demo</groupId>
                 <artifactId>javaeight</artifactId>
                 <version>${javaeight.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>email</artifactId>
+                <version>${email.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

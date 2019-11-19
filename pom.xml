@@ -27,6 +27,7 @@
         <ehcache.version>0.0.1-SNAPSHOT</ehcache.version>
         <javaeight.version>0.0.1-SNAPSHOT</javaeight.version>
         <kafka.version>0.0.1-SNAPSHOT</kafka.version>
+        <email.version>0.0.1-SNAPSHOT</email.version>
     </properties>
 
     <modules>
@@ -39,6 +40,7 @@
         <module>ehcache</module>
         <module>javaeight</module>
         <module>kafka</module>
+        <module>email</module>
     </modules>
 
     <dependencyManagement>
@@ -87,6 +89,11 @@
                 <groupId>club.chenlinghong.demo</groupId>
                 <artifactId>kafka</artifactId>
                 <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>email</artifactId>
+                <version>${email.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

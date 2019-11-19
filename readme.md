@@ -1,8 +1,5 @@
 # demo
 
-module 简介：
-
-
 - rambo: 零散demo
 - aop： aop编程
 - qconfig: QConfig配置中心
@@ -11,4 +8,5 @@ module 简介：
 - graphql: GraphQL
 - ehcache: Ehcache
 - javaeight: java 8
+- email: 发送邮件
 - kafka：Apache Kafka

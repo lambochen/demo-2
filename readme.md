@@ -1,8 +1,5 @@
 # demo
 
-module 简介：
-
-
 - rambo: 零散demo
 - aop： aop编程
 - qconfig: QConfig配置中心

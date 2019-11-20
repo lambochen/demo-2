@@ -19,6 +19,6 @@ public class SimpleConsumer {
 
     @KafkaListener(topics = "${kafka.topic.default}", containerFactory = "kafkaListenerContainerFactory")
     public void consumer(MessageEntity message){
-        log.info(gson.toJson(message));
+        log.info("consumer: " + gson.toJson(message));
     }
 }

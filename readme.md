@@ -10,3 +10,4 @@
 - javaeight: java 8
 - email: 发送邮件
 - kafka：Apache Kafka
+- mybatis-plus: MyBatis-Plus 

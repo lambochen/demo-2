@@ -28,6 +28,7 @@
         <javaeight.version>0.0.1-SNAPSHOT</javaeight.version>
         <kafka.version>0.0.1-SNAPSHOT</kafka.version>
         <email.version>0.0.1-SNAPSHOT</email.version>
+        <mybatis-plus.version>0.0.1-SNAPSHOT</mybatis-plus.version>
     </properties>
 
     <modules>
@@ -41,6 +42,7 @@
         <module>javaeight</module>
         <module>kafka</module>
         <module>email</module>
+        <module>mybatis-plus</module>
     </modules>
 
     <dependencyManagement>
@@ -49,6 +51,11 @@
                 <groupId>club.chenlinghong.demo</groupId>
                 <artifactId>aop</artifactId>
                 <version>${aop.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>mybatisplus</artifactId>
+                <version>${mybatis-plus.version}</version>
             </dependency>
             <dependency>
                 <groupId>club.chenlinghong.demo</groupId>

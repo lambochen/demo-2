@@ -2,4 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="club.chenlinghong.demo.mybatisplus.generator.codegenerator.mapper.UserMapper">
 
+
+    <select id="selectPageVo" resultType="club.chenlinghong.demo.mybatisplus.entity.User">
+        SELECT id,name FROM user WHERE state=#{state}
+    </select>
+
+
 </mapper>

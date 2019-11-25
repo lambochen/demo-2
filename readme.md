@@ -11,3 +11,4 @@
 - email: 发送邮件
 - kafka：Apache Kafka
 - mybatis-plus: MyBatis-Plus 
+- zookeeper: Zookeeper

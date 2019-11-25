@@ -29,6 +29,7 @@
         <kafka.version>0.0.1-SNAPSHOT</kafka.version>
         <email.version>0.0.1-SNAPSHOT</email.version>
         <mybatis-plus.version>0.0.1-SNAPSHOT</mybatis-plus.version>
+        <zookeeper.version>0.0.1-SNAPSHOT</zookeeper.version>
     </properties>
 
     <modules>
@@ -43,6 +44,7 @@
         <module>kafka</module>
         <module>email</module>
         <module>mybatis-plus</module>
+        <module>zookeeper</module>
     </modules>
 
     <dependencyManagement>
@@ -101,6 +103,11 @@
                 <groupId>club.chenlinghong.demo</groupId>
                 <artifactId>email</artifactId>
                 <version>${email.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${zookeeper.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

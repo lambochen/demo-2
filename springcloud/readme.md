@@ -14,3 +14,4 @@
 - hystrix-dashboard: hystrix dashboard 监控客户端
 - zuul: zuul 路由转发和过滤器
 - config-server: 分布式配置中心 server
+- config-client: 分布式配置中心 client

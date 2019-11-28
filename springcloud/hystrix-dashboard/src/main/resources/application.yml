@@ -1,0 +1,17 @@
+#暴露全部的监控信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream, info, health
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8821
+spring:
+  application:
+    name: hystrix-dashboard

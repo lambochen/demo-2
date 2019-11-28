@@ -18,19 +18,34 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <eureka.demo.version>0.0.1-SNAPSHOT</eureka.demo.version>
+        <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
+        <eureka.server.version>0.0.1-SNAPSHOT</eureka.server.version>
+        <eureka.client.version>0.0.1-SNAPSHOT</eureka.client.version>
     </properties>
 
     <modules>
         <module>eureka-server</module>
+        <module>eureka-client</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
                 <groupId>club.chenlinghong.demo.springcloud</groupId>
                 <artifactId>eureka-server</artifactId>
-                <version>${eureka.demo.version}</version>
+                <version>${eureka.server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud</groupId>
+                <artifactId>eureka-client</artifactId>
+                <version>${eureka.client.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -26,6 +26,7 @@
         <hystrix.ribbon.version>0.0.1-SNAPSHOT</hystrix.ribbon.version>
         <hystrix.feign.version>0.0.1-SNAPSHOT</hystrix.feign.version>
         <hystrix.dashboard.version>0.0.1-SNAPSHOT</hystrix.dashboard.version>
+        <zuul.version>0.0.1-SNAPSHOT</zuul.version>
     </properties>
 
     <modules>
@@ -36,6 +37,7 @@
         <module>hystrix-ribbon</module>
         <module>hystrix-feign</module>
         <module>hystrix-dashboard</module>
+        <module>zuul</module>
     </modules>
 
     <dependencyManagement>
@@ -81,6 +83,11 @@
                 <groupId>club.chenlinghong.demo.springcloud</groupId>
                 <artifactId>hystrix-dashboard</artifactId>
                 <version>${hystrix.dashboard.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud</groupId>
+                <artifactId>zuul</artifactId>
+                <version>${zuul.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

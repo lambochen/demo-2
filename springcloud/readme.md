@@ -12,3 +12,4 @@
 - hystrix-ribbon: hystrix 断路器和 ribbon 搭配使用
 - hystrix-feign: hystrix 断路器和 feign 搭配使用
 - hystrix-dashboard: hystrix dashboard 监控客户端
+- zuul: zuul 路由转发和过滤器

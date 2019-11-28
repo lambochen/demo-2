@@ -3,41 +3,40 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>club.chenlinghong</groupId>
-        <artifactId>demo</artifactId>
+        <groupId>club.chenlinghong.demo</groupId>
+        <artifactId>springcloud</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
-    <groupId>club.chenlinghong.demo</groupId>
-    <artifactId>springcloud</artifactId>
+    <groupId>club.chenlinghong.demo.springcloud</groupId>
+    <artifactId>eureka-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springcloud</name>
+    <name>eureka-server</name>
     <description>Demo project for Spring Boot</description>
-
-    <packaging>pom</packaging>
 
     <properties>
         <java.version>1.8</java.version>
-        <eureka.demo.version>0.0.1-SNAPSHOT</eureka.demo.version>
+        <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
     </properties>
 
-    <modules>
-        <module>eureka-server</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>club.chenlinghong.demo.springcloud</groupId>
-                <artifactId>eureka-server</artifactId>
-                <version>${eureka.demo.version}</version>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
-
-    </dependencies>
 
     <build>
         <plugins>

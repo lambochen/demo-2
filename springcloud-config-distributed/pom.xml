@@ -16,17 +16,29 @@
 
     <packaging>pom</packaging>
 
-    <modules>
+    <properties>
+        <java.version>1.8</java.version>
+        <config.server.version>0.0.1-SNAPSHOT</config.server.version>
+        <eureka.server.version>0.0.1-SNAPSHOT</eureka.server.version>
+    </properties>
 
+    <modules>
+        <module>config-server</module>
+        <module>config-eureka-server</module>
     </modules>
 
     <dependencyManagement>
-
+        <dependencies>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud.config.distributed</groupId>
+                <artifactId>config-server</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud.config.distributed</groupId>
+                <artifactId>eureka-server</artifactId>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
-
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
 
     <dependencies>
 

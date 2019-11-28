@@ -13,3 +13,4 @@
 - mybatis-plus: MyBatis-Plus 
 - zookeeper: Zookeeper
 - springcloud: SpringCloud 常用组件学习
+- springcloud-config-distributed: 高可用的分布式配置中心 SpringCloud

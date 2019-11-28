@@ -1,4 +1,4 @@
-package club.chenlinghong.demo.springcloud.feign;
+package club.chenlinghong.demo.springcloud.hystrix.feign;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,12 +7,12 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
-//@EnableDiscoveryClient
 @EnableFeignClients
-public class FeignApplication {
+//@EnableDiscoveryClient
+public class HystrixFeignApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FeignApplication.class, args);
+        SpringApplication.run(HystrixFeignApplication.class, args);
     }
 
 }

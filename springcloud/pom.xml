@@ -24,6 +24,7 @@
         <ribbon.version>0.0.1-SNAPSHOT</ribbon.version>
         <feign.version>0.0.1-SNAPSHOT</feign.version>
         <hystrix.ribbon.version>0.0.1-SNAPSHOT</hystrix.ribbon.version>
+        <hystrix.feign.version>0.0.1-SNAPSHOT</hystrix.feign.version>
     </properties>
 
     <modules>
@@ -32,6 +33,7 @@
         <module>ribbon</module>
         <module>feign</module>
         <module>hystrix-ribbon</module>
+        <module>hystrix-feign</module>
     </modules>
 
     <dependencyManagement>
@@ -67,6 +69,11 @@
                 <groupId>club.chenlinghong.demo.springcloud</groupId>
                 <artifactId>hystrix-ribbon</artifactId>
                 <version>${hystrix.ribbon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud</groupId>
+                <artifactId>hystrix-feign</artifactId>
+                <version>${hystrix.feign.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

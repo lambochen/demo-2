@@ -12,3 +12,4 @@
 - kafka：Apache Kafka
 - mybatis-plus: MyBatis-Plus 
 - zookeeper: Zookeeper
+- springcloud: SpringCloud 常用组件学习

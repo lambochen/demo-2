@@ -30,6 +30,7 @@
         <email.version>0.0.1-SNAPSHOT</email.version>
         <mybatis-plus.version>0.0.1-SNAPSHOT</mybatis-plus.version>
         <zookeeper.version>0.0.1-SNAPSHOT</zookeeper.version>
+        <springcloud.demo.version>0.0.1-SNAPSHOT</springcloud.demo.version>
     </properties>
 
     <modules>
@@ -45,6 +46,7 @@
         <module>email</module>
         <module>mybatis-plus</module>
         <module>zookeeper</module>
+        <module>springcloud</module>
     </modules>
 
     <dependencyManagement>
@@ -108,6 +110,11 @@
                 <groupId>club.chenlinghong.demo</groupId>
                 <artifactId>zookeeper</artifactId>
                 <version>${zookeeper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>springcloud</artifactId>
+                <version>${springcloud.demo.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

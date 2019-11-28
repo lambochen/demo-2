@@ -22,12 +22,14 @@
         <eureka.server.version>0.0.1-SNAPSHOT</eureka.server.version>
         <eureka.client.version>0.0.1-SNAPSHOT</eureka.client.version>
         <ribbon.version>0.0.1-SNAPSHOT</ribbon.version>
+        <feign.version>0.0.1-SNAPSHOT</feign.version>
     </properties>
 
     <modules>
         <module>eureka-server</module>
         <module>eureka-client</module>
         <module>ribbon</module>
+        <module>feign</module>
     </modules>
 
     <dependencyManagement>
@@ -53,6 +55,11 @@
                 <groupId>club.chenlinghong.demo.springcloud</groupId>
                 <artifactId>ribbon</artifactId>
                 <version>${ribbon.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud</groupId>
+                <artifactId>feign</artifactId>
+                <version>${feign.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

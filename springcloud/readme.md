@@ -9,3 +9,4 @@
 - eureka-client: eureka client 服务消费
 - ribbon: 客户端负载均衡
 - feign: 声明式的伪 HTTP 客户端
+- hystrix-ribbon: hystrix 断路器和 ribbon 搭配使用

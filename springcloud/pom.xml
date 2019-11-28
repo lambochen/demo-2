@@ -23,6 +23,7 @@
         <eureka.client.version>0.0.1-SNAPSHOT</eureka.client.version>
         <ribbon.version>0.0.1-SNAPSHOT</ribbon.version>
         <feign.version>0.0.1-SNAPSHOT</feign.version>
+        <hystrix.ribbon.version>0.0.1-SNAPSHOT</hystrix.ribbon.version>
     </properties>
 
     <modules>
@@ -30,6 +31,7 @@
         <module>eureka-client</module>
         <module>ribbon</module>
         <module>feign</module>
+        <module>hystrix-ribbon</module>
     </modules>
 
     <dependencyManagement>
@@ -60,6 +62,11 @@
                 <groupId>club.chenlinghong.demo.springcloud</groupId>
                 <artifactId>feign</artifactId>
                 <version>${feign.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud</groupId>
+                <artifactId>hystrix-ribbon</artifactId>
+                <version>${hystrix.ribbon.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

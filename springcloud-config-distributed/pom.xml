@@ -20,10 +20,12 @@
         <java.version>1.8</java.version>
         <config.server.version>0.0.1-SNAPSHOT</config.server.version>
         <eureka.server.version>0.0.1-SNAPSHOT</eureka.server.version>
+        <config.client.version>0.0.1-SNAPSHOT</config.client.version>
     </properties>
 
     <modules>
         <module>config-server</module>
+        <module>config-client</module>
         <module>config-eureka-server</module>
     </modules>
 
@@ -32,10 +34,17 @@
             <dependency>
                 <groupId>club.chenlinghong.demo.springcloud.config.distributed</groupId>
                 <artifactId>config-server</artifactId>
+                <version>${config.server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud.config.distributed</groupId>
+                <artifactId>config-client</artifactId>
+                <version>${config.client.version}</version>
             </dependency>
             <dependency>
                 <groupId>club.chenlinghong.demo.springcloud.config.distributed</groupId>
                 <artifactId>eureka-server</artifactId>
+                <version>${eureka.server.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

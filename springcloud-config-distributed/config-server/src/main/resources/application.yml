@@ -13,8 +13,6 @@ spring:
         git:
           uri: https://github.com/LamboChen/springcloud-config
           search-paths: respo
-          username: lambochen
-          password:
       label: master
 server:
   port: 9771

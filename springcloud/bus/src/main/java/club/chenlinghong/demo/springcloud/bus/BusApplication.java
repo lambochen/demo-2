@@ -1,15 +1,15 @@
-package club.chenlinghong.demo.springcloud.config.client;
+package club.chenlinghong.demo.springcloud.bus;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@SpringBootApplication
 @EnableDiscoveryClient
-public class ConfigClientApplication {
+@SpringBootApplication
+public class BusApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigClientApplication.class, args);
+        SpringApplication.run(BusApplication.class, args);
     }
 
 }

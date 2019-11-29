@@ -5,13 +5,15 @@
 
 # module
 
-- eureka-server: eureka server 注册中心
+- config-client: 分布式配置中心 client
+- config-server: 分布式配置中心 server
 - eureka-client: eureka client 服务消费
-- ribbon: 客户端负载均衡
+- eureka-server: eureka server 注册中心
 - feign: 声明式的伪 HTTP 客户端
+- ribbon: 客户端负载均衡
 - hystrix-ribbon: hystrix 断路器和 ribbon 搭配使用
 - hystrix-feign: hystrix 断路器和 feign 搭配使用
 - hystrix-dashboard: hystrix dashboard 监控客户端
 - zuul: zuul 路由转发和过滤器
-- config-server: 分布式配置中心 server
-- config-client: 分布式配置中心 client
+- bus: 消息总线
+

@@ -29,6 +29,7 @@
         <zuul.version>0.0.1-SNAPSHOT</zuul.version>
         <config.server.version>0.0.1-SNAPSHOT</config.server.version>
         <config.client.version>0.0.1-SNAPSHOT</config.client.version>
+        <bus.version>0.0.1-SNAPSHOT</bus.version>
     </properties>
 
     <modules>
@@ -42,6 +43,7 @@
         <module>zuul</module>
         <module>config-server</module>
         <module>config-client</module>
+        <module>bus</module>
     </modules>
 
     <dependencyManagement>
@@ -102,6 +104,11 @@
                 <groupId>club.chenlinghong.demo.springcloud</groupId>
                 <artifactId>config-client</artifactId>
                 <version>${config.client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud</groupId>
+                <artifactId>bus</artifactId>
+                <version>${bus.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

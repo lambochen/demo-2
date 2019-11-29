@@ -30,6 +30,7 @@
         <config.server.version>0.0.1-SNAPSHOT</config.server.version>
         <config.client.version>0.0.1-SNAPSHOT</config.client.version>
         <bus.version>0.0.1-SNAPSHOT</bus.version>
+        <sleuth.version>0.0.1-SNAPSHOT</sleuth.version>
     </properties>
 
     <modules>
@@ -44,6 +45,7 @@
         <module>config-server</module>
         <module>config-client</module>
         <module>bus</module>
+        <module>sleuth</module>
     </modules>
 
     <dependencyManagement>
@@ -109,6 +111,11 @@
                 <groupId>club.chenlinghong.demo.springcloud</groupId>
                 <artifactId>bus</artifactId>
                 <version>${bus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud</groupId>
+                <artifactId>sleuth</artifactId>
+                <version>${sleuth.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -16,4 +16,5 @@
 - hystrix-dashboard: hystrix dashboard 监控客户端
 - zuul: zuul 路由转发和过滤器
 - bus: 消息总线
+- sleuth: 服务追踪组件
 

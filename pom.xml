@@ -32,6 +32,7 @@
         <zookeeper.version>0.0.1-SNAPSHOT</zookeeper.version>
         <springcloud.demo.version>0.0.1-SNAPSHOT</springcloud.demo.version>
         <springcloud.config.distributed.version>0.0.1-SNAPSHOT</springcloud.config.distributed.version>
+        <springcloud.eureka.distributed.version>0.0.1-SNAPSHOT</springcloud.eureka.distributed.version>
     </properties>
 
     <modules>
@@ -49,6 +50,7 @@
         <module>zookeeper</module>
         <module>springcloud</module>
         <module>springcloud-config-distributed</module>
+        <module>springcloud-eureka-distributed</module>
     </modules>
 
     <dependencyManagement>
@@ -122,6 +124,11 @@
                 <groupId>club.chenlinghong.demo</groupId>
                 <artifactId>springcloud-config-distributed</artifactId>
                 <version>${springcloud.config.distributed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>springcloud-eureka-distributed</artifactId>
+                <version>${springcloud.eureka.distributed.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

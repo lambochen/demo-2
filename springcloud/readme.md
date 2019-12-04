@@ -13,8 +13,8 @@
 - ribbon: 客户端负载均衡
 - hystrix-ribbon: hystrix 断路器和 ribbon 搭配使用
 - hystrix-feign: hystrix 断路器和 feign 搭配使用
-- hystrix-dashboard: hystrix dashboard 监控客户端
+- hystrix-dashboard: hystrix dashboard 监控客户端【尚未完成】
 - zuul: zuul 路由转发和过滤器
-- bus: 消息总线
-- sleuth: 服务追踪组件
+- bus: 消息总线【尚未完成】
+- sleuth: 服务追踪组件【尚未完成】
 

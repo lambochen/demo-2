@@ -19,10 +19,12 @@
     <properties>
         <java.version>1.8</java.version>
         <eureka.server.version>0.0.1-SNAPSHOT</eureka.server.version>
+        <eureka.client.version>0.0.1-SNAPSHOT</eureka.client.version>
     </properties>
 
     <modules>
         <module>eureka-server-distributed</module>
+        <module>eureka-client-demo</module>
     </modules>
 
     <dependencyManagement>
@@ -31,6 +33,11 @@
                 <groupId>club.chenlinghong.demo.springcloud.eureka.distributed</groupId>
                 <artifactId>eureka-server</artifactId>
                 <version>${eureka.server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud.eureka.distributed</groupId>
+                <artifactId>eureka-client</artifactId>
+                <version>${eureka.client.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

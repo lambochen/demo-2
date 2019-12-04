@@ -3,7 +3,7 @@ spring:
     name: eureka-server
 
 server:
-  port: 10761
+  port: 10762
 
 port-one: 10761
 port-two: 10762
@@ -16,4 +16,4 @@ eureka:
 #    registerWithEureka: false
 #    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://peer2:${port-two}/eureka/,http://peer3:${port-three}/eureka/
+      defaultZone: http://peer1:${port-one}/eureka/,http://peer3:${port-three}/eureka/

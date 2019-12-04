@@ -14,27 +14,28 @@
     <name>springcloud-eureka-distributed</name>
     <description>Demo project for Spring Boot</description>
 
+    <packaging>pom</packaging>
+
     <properties>
         <java.version>1.8</java.version>
+        <eureka.server.version>0.0.1-SNAPSHOT</eureka.server.version>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
+    <modules>
+        <module>eureka-server-distributed</module>
+    </modules>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>club.chenlinghong.demo.springcloud.eureka.distributed</groupId>
+                <artifactId>eureka-server</artifactId>
+                <version>${eureka.server.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
     </dependencies>
 
     <build>

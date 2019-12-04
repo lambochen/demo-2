@@ -1,0 +1,16 @@
+
+server:
+  port: 10761
+
+port-one: 10761
+port-two: 10762
+port-three: 10763
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${port-one}/eureka/,http://${eureka.instance.hostname}:${port-two}/eureka/,http://${eureka.instance.hostname}:${port-three}/eureka/

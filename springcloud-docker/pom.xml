@@ -22,7 +22,7 @@
     </properties>
 
     <modules>
-
+        <module>docker-eureka</module>
     </modules>
 
     <dependencyManagement>

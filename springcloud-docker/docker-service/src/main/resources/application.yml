@@ -1,10 +1,12 @@
+server:
+  port: 8771
 
 eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
   client:
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://eureka-server:8761/eureka/
-server:
-  port: 8772
-spring:
-  application:
-    name: service-hi
+      defaultZone: http://chenlinghong.club:8761/eureka/

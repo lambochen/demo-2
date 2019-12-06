@@ -3,46 +3,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>club.chenlinghong</groupId>
-        <artifactId>demo</artifactId>
+        <groupId>club.chenlinghong.demo</groupId>
+        <artifactId>springcloud-docker</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
-    <groupId>club.chenlinghong.demo</groupId>
-    <artifactId>springcloud-docker</artifactId>
+    <groupId>club.chenlinghong.demo.springcloud.docker</groupId>
+    <artifactId>docker-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springcloud-docker</name>
+    <name>docker-service</name>
     <description>Demo project for Spring Boot</description>
-
-    <packaging>pom</packaging>
 
     <properties>
         <java.version>1.8</java.version>
-        <docker.image.prefix>lambochen</docker.image.prefix>
-        <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
     </properties>
-
-    <modules>
-        <module>docker-eureka</module>
-        <module>docker-service</module>
-    </modules>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
         <dependency>
@@ -64,7 +43,22 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.4.13</version>
+                <configuration>
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+                    <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
-
 </project>

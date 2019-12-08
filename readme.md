@@ -18,3 +18,4 @@
 - springcloud-docker: SpringCloud 采用 docker 部署
 - springboot-actuator: SpringBoot Actuator 
 - springcloud-demo-fymod: SpringCloud demo, fymod 博主教程版本
+- nexus: nexus maven 私服

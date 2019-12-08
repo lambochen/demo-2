@@ -18,24 +18,6 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <aop.version>0.0.1-SNAPSHOT</aop.version>
-        <qconfig.version>0.0.1-SNAPSHOT</qconfig.version>
-        <rambo.version>0.0.1-SNAPSHOT</rambo.version>
-        <mock.version>0.0.1-SNAPSHOT</mock.version>
-        <evosuite.version>0.0.1-SNAPSHOT</evosuite.version>
-        <graphql.version>0.0.1-SNAPSHOT</graphql.version>
-        <ehcache.version>0.0.1-SNAPSHOT</ehcache.version>
-        <javaeight.version>0.0.1-SNAPSHOT</javaeight.version>
-        <kafka.version>0.0.1-SNAPSHOT</kafka.version>
-        <email.version>0.0.1-SNAPSHOT</email.version>
-        <mybatis-plus.version>0.0.1-SNAPSHOT</mybatis-plus.version>
-        <zookeeper.version>0.0.1-SNAPSHOT</zookeeper.version>
-        <springcloud.demo.version>0.0.1-SNAPSHOT</springcloud.demo.version>
-        <springcloud-config-distributed.version>0.0.1-SNAPSHOT</springcloud-config-distributed.version>
-        <springcloud-eureka-distributed.version>0.0.1-SNAPSHOT</springcloud-eureka-distributed.version>
-        <springcloud-docker.version>0.0.1-SNAPSHOT</springcloud-docker.version>
-        <springboot-actuator.version>0.0.1-SNAPSHOT</springboot-actuator.version>
-        <springcloud-demo-fymod.version>0.0.1-SNAPSHOT</springcloud-demo-fymod.version>
     </properties>
 
     <modules>
@@ -57,102 +39,8 @@
         <module>springcloud-docker</module>
         <module>springboot-actuator</module>
         <module>springcloud-demo-fymod</module>
+<!--        <module>nexus</module>-->
     </modules>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>aop</artifactId>
-                <version>${aop.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>mybatisplus</artifactId>
-                <version>${mybatis-plus.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>qconfig</artifactId>
-                <version>${qconfig.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>rambo</artifactId>
-                <version>${rambo.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>mock</artifactId>
-                <version>${mock.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>evosuite</artifactId>
-                <version>${evosuite.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>graphql</artifactId>
-                <version>${graphql.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>ehcache</artifactId>
-                <version>${ehcache.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>javaeight</artifactId>
-                <version>${javaeight.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>kafka</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>email</artifactId>
-                <version>${email.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>zookeeper</artifactId>
-                <version>${zookeeper.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>springcloud</artifactId>
-                <version>${springcloud.demo.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>springcloud-config-distributed</artifactId>
-                <version>${springcloud-config-distributed.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>springcloud-eureka-distributed</artifactId>
-                <version>${springcloud-eureka-distributed.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>springcloud-docker</artifactId>
-                <version>${springcloud-docker.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>springboot-actuator</artifactId>
-                <version>${springboot-actuator.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>club.chenlinghong.demo</groupId>
-                <artifactId>springcloud-demo-fymod</artifactId>
-                <version>${springcloud-demo-fymod.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <dependencies>
 

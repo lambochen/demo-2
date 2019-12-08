@@ -3,28 +3,40 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>club.chenlinghong</groupId>
-        <artifactId>demo</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath> <!-- lookup parent from repository -->
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.2.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>club.chenlinghong.demo</groupId>
-    <artifactId>springcloud-demo-fymod</artifactId>
+    <groupId>club.chenlinghong.demo.springcloud.demo.fymod</groupId>
+    <artifactId>fymod-eureka-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springcloud-demo-fymod</name>
+    <name>fymod-eureka-client</name>
     <description>Demo project for Spring Boot</description>
-
-    <packaging>pom</packaging>
 
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
     </properties>
 
-    <modules>
-        <module>fymod-eureka</module>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
 
-    </modules>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>

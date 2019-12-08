@@ -1,0 +1,39 @@
+
+
+# 配置日志级别
+logging:
+  level:
+    root: info
+  file:
+    path: ./logs/
+management:
+  server:
+    # actuator 端口
+    port: 18763
+  endpoints:
+    web:
+      # 默认访问路径
+      base-path: /actuator
+      exposure:
+        # 开放所有页面节点  默认只开启了health、info两个节点
+        include: "*"
+  endpoint:
+    health:
+      # 显示健康具体信息  默认不会显示详细信息
+      show-details: always
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      name: lambo
+      password: 123456
+
+server:
+  port: 8763
+eureka:
+  instance:
+    hostname: peer3
+  client:
+    service-url:
+      defaultZone: http://peer2:8761/eureka/,http://peer1:8762/eureka

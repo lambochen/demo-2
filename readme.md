@@ -16,3 +16,4 @@
 - springcloud-config-distributed: 高可用的分布式配置中心 SpringCloud-Config
 - springcloud-eureka-distributed: 高可用的分布式注册中心
 - springcloud-docker: SpringCloud 采用 docker 部署
+- springboot-actuator: SpringBoot Actuator 

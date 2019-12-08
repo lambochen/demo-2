@@ -35,6 +35,7 @@
         <springcloud-eureka-distributed.version>0.0.1-SNAPSHOT</springcloud-eureka-distributed.version>
         <springcloud-docker.version>0.0.1-SNAPSHOT</springcloud-docker.version>
         <springboot-actuator.version>0.0.1-SNAPSHOT</springboot-actuator.version>
+        <springcloud-demo-fymod.version>0.0.1-SNAPSHOT</springcloud-demo-fymod.version>
     </properties>
 
     <modules>
@@ -55,6 +56,7 @@
         <module>springcloud-eureka-distributed</module>
         <module>springcloud-docker</module>
         <module>springboot-actuator</module>
+        <module>springcloud-demo-fymod</module>
     </modules>
 
     <dependencyManagement>
@@ -143,6 +145,11 @@
                 <groupId>club.chenlinghong.demo</groupId>
                 <artifactId>springboot-actuator</artifactId>
                 <version>${springboot-actuator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>club.chenlinghong.demo</groupId>
+                <artifactId>springcloud-demo-fymod</artifactId>
+                <version>${springcloud-demo-fymod.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

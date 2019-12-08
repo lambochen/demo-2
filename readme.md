@@ -17,3 +17,4 @@
 - springcloud-eureka-distributed: 高可用的分布式注册中心
 - springcloud-docker: SpringCloud 采用 docker 部署
 - springboot-actuator: SpringBoot Actuator 
+- springcloud-demo-fymod: SpringCloud demo, fymod 博主教程版本

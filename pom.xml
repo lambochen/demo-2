@@ -40,6 +40,7 @@
         <module>springboot-actuator</module>
         <module>springcloud-demo-fymod</module>
 <!--        <module>nexus</module>-->
+        <module>springsecurity-jwt</module>
     </modules>
 
     <dependencies>

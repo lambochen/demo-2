@@ -42,6 +42,7 @@
 <!--        <module>nexus</module>-->
         <module>springsecurity-jwt</module>
         <module>springboot-swagger</module>
+        <module>springsecurity</module>
     </modules>
 
     <dependencies>

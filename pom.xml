@@ -41,6 +41,7 @@
         <module>springcloud-demo-fymod</module>
 <!--        <module>nexus</module>-->
         <module>springsecurity-jwt</module>
+        <module>springboot-swagger</module>
     </modules>
 
     <dependencies>

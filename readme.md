@@ -20,4 +20,6 @@
 - springcloud-demo-fymod: SpringCloud demo, fymod 博主教程版本
 - nexus: nexus maven 私服
 - springsecurity-jwt: SpringBoot 整合 SpringSecurity JWT 实现权限管理
+- springboot-swagger: SpringBoot 整合 Swagger
+
  

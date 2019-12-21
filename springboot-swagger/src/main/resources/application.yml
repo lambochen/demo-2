@@ -1,0 +1,5 @@
+
+# swagger
+swagger:
+  enabled: true
+  apiVersion: 0.0.1

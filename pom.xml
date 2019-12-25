@@ -43,6 +43,7 @@
         <module>springsecurity-jwt</module>
         <module>springboot-swagger</module>
         <module>springsecurity</module>
+        <module>apache-pulsar</module>
     </modules>
 
     <dependencies>

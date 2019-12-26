@@ -1,4 +1,4 @@
-package club.chenlinghong.demo.apache.pulsar;
+package club.chenlinghong.demo.apache.pulsar.alone;
 
 import org.apache.pulsar.client.api.Producer;
 import org.apache.pulsar.client.api.PulsarClient;
@@ -29,7 +29,7 @@ public class PulsarProducer {
                         .create();
                 int index = 0;
                 while (true) {
-                    String message = String.format(MESSAGE_TEMPLATE, index);
+                    String message = String.format(MESSAGE_TEMPLATE, ++index);
                     System.out.println("send message: " + message);
                     producer.send(message);
                     Thread.sleep(5000);

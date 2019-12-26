@@ -1,4 +1,4 @@
-package club.chenlinghong.demo.apache.pulsar;
+package club.chenlinghong.demo.apache.pulsar.alone;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,7 +17,7 @@ public class PulsarClientBuilder {
     /**
      * pulsar 服务器连接地址
      */
-    private static final String PULSAR_SERVER_URL = "pulsar://chenlinghong.club:6650";
+    private static final String PULSAR_SERVER_URL = "pulsar://localhost:6650";
 
     private PulsarClientBuilder(){
 

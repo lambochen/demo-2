@@ -1,10 +1,12 @@
-package club.chenlinghong.demo.apache.pulsar;
+package club.chenlinghong.demo.apache.pulsar.alone;
 
 import org.apache.pulsar.client.api.Consumer;
 import org.apache.pulsar.client.api.Message;
 import org.apache.pulsar.client.api.PulsarClient;
 import org.apache.pulsar.client.api.PulsarClientException;
 import org.apache.pulsar.client.api.Schema;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import java.util.concurrent.Executors;
 
@@ -13,8 +15,19 @@ import java.util.concurrent.Executors;
  * @Date 2019/12/26 1:36
  * @Description pulsar consumer
  **/
+@Component
 public class PulsarConsumer {
 
+
+//    static {
+//        try {
+//            receive();
+//        } catch (PulsarClientException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+    @Bean
     public static void receive() throws PulsarClientException {
         Executors.newFixedThreadPool(1).execute(() -> {
             try {
@@ -26,6 +39,7 @@ public class PulsarConsumer {
                 while (true) {
                     Message message = consumer.receive();
                     System.out.println("receive message: " + message.getValue());
+                    consumer.acknowledgeAsync(message);
                 }
             } catch (Exception e) {
                 System.out.println(e);

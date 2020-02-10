@@ -23,7 +23,7 @@
 
     <modules>
         <module>fymod-eureka</module>
-
+        <module>fymod-eureka-client</module>
     </modules>
 
     <dependencyManagement>

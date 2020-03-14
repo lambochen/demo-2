@@ -23,6 +23,7 @@
 - springboot-swagger: SpringBoot 整合 Swagger
 - springsecurity: 学习demo
 - apache-pulsar: Apache Pulsar MQ
-- easycode: 根据 DatabaseTool 快速生辰代码
+- easycode: 根据 DatabaseTool 快速生成代码
+- influxdb: InfluxDB Java Client 
 
  

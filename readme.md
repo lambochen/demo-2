@@ -26,5 +26,5 @@
 - easycode: 根据 DatabaseTool 快速生成代码
 - influxdb: InfluxDB Java Client 
 - jboot: JBoot Framework 
-
+- jfinal: JFinal Framework
  

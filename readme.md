@@ -27,4 +27,5 @@
 - influxdb: InfluxDB Java Client 
 - jboot: JBoot Framework 
 - jfinal: JFinal Framework
+- maven-demo: maven multi module demo
  

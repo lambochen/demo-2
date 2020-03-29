@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: homepage-zuul
+
+server:
+  port: 9000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:8000/eureka/
+
+

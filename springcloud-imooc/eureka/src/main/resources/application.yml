@@ -5,7 +5,6 @@ spring:
 server:
   port: 8000
 
-
 eureka:
   instance:
     hostname: localhost
@@ -16,3 +15,5 @@ eureka:
     register-with-eureka: false
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+

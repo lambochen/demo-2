@@ -41,6 +41,7 @@
         <module>apache-pulsar</module>
         <module>easycode</module>
         <module>influxdb</module>
+        <module>spring-imooc</module>
     </modules>
 
     <dependencies>

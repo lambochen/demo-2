@@ -42,6 +42,7 @@
         <module>easycode</module>
         <module>influxdb</module>
         <module>spring-imooc</module>
+        <module>design-pattern</module>
     </modules>
 
     <dependencies>
